@@ -25,9 +25,9 @@ namespace NawDomein
 
         private void MijnInterneMethod(string voornaam, string achternaam, string emailadress)
         {
-            if (string.IsNullOrEmpty(voornaam)) throw new ArgumentException("voornaam kan niet null zijn! piemel!");
-            if (string.IsNullOrEmpty(achternaam)) throw new ArgumentException("achternaam kan niet null zijn! piemel!");
-            if (string.IsNullOrEmpty(emailadress)) throw new ArgumentException("emailadress kan niet null zijn! piemel!");
+            if (string.IsNullOrEmpty(voornaam)) throw new ArgumentException("voornaam kan niet null of leeg zijn!");
+            if (string.IsNullOrEmpty(achternaam)) throw new ArgumentException("achternaam kan niet null of leeg  zijn!");
+            if (string.IsNullOrEmpty(emailadress)) throw new ArgumentException("emailadress kan niet null of leeg zijn!");
 
             Voornaam = voornaam;
             Achternaam = achternaam;
